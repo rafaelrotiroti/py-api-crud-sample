@@ -15,7 +15,7 @@ def create_app():
     serializer_config(app)
     # Cria as Rotas
     api(app)
-
+    # Migrações do banco de dados
     Migrate(app, app.db)
 
     return app
