@@ -1,5 +1,5 @@
 from flask_marshmallow import Marshmallow
-from marshmallow_sqlalchemy import SQLAlchemySchema, auto_field, ModelSchema
+from marshmallow_sqlalchemy import ModelSchema
 
 from .models.product import Product as ProductModel
 
