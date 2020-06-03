@@ -10,4 +10,4 @@
     ```export FLASK_APP=__init__.py```
 
 # 4- Rode com:
-    ``` flask run ```
+    ```` flask run ````
