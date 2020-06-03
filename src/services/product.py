@@ -8,7 +8,7 @@ class Product:
 
 
     def __init__(self):
-        self.product_schema = ProductSchema()
+        pass
 
 
     def insert_product(self, data):
@@ -18,12 +18,10 @@ class Product:
         return product_schema.dump(product)
 
     def load_products(self):
-        products_schema = ProductSchema(many=True)
         products_query = ProductModel.query.all()
         return products_schema.dump(products_query)
 
     def load_this_product(self, product_id):
-        product_schema = ProductSchema()
         product_query = ProductModel.query.filter_by(id=product_id).one()
         return product_schema.dump(product_query)
 
@@ -34,7 +32,6 @@ class Product:
         return {'Produto': product_id, 'Deletado': True }
 
     def update_this_product(self, product_id, data):
-        product_schema = ProductSchema()
         this_product = ProductModel.query.filter_by(id=product_id).one()
         
         this_product.valor = data['valor']
