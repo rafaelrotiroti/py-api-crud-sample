@@ -1,13 +1,21 @@
 # 1- Instalar dependencias:
-    ```pipenv install ```
+    ```
+        pipenv install
+    ```
 
 # 2- Iniciar virtualenv:
-    ```pipenv shell ```
+    ```
+        pipenv shell 
+    ```
 
 
 # 3- Exportar as variaveis de ambiente:
-    ```export FLASK_ENV=development```
-    ```export FLASK_APP=__init__.py```
+    ``` 
+    export FLASK_ENV=development
+    export FLASK_APP=__init__.py
+    ```
 
 # 4- Rode com:
-    ```` flask run ````
+    ```
+    flask run 
+    ```
