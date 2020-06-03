@@ -25,3 +25,6 @@ class BaseController(Resource):
 
     def to_json(self, data):
         return jsonify(data)
+
+    def return_unexpected_error(self, exception):
+        return {'Error': str(exception)}
